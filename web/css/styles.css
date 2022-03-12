@@ -1,0 +1,418 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+@import url('overwrite.css');
+body {
+	color:#777;
+	background: #f7f7f7;
+	font-size: 16px;
+	line-height: 1.6em;
+	font-weight: 300;
+	text-shadow: none;
+}
+
+.clear {
+	clear: both;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#222;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-style: normal;
+	margin: 0 0 20px 0;
+}
+h1 { font-size: 40px; line-height: 30px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+.txt-light { font-weight: 300; }
+.txt-regular { font-weight: 400; }
+.txt-bold { font-weight: 700; }
+.txt-uppercase { text-transform: uppercase; }
+
+blockquote {
+	font-family: Georgia, serif;
+}
+
+blockquote.bigquote {
+	border: none;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.1em;
+}
+
+.text-bold {
+	font-weight: 900;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+
+small {
+	font-size: 70%;
+	font-weight: 100;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+:focus {
+	outline: none;
+}
+
+.color-white.txt-shadow {
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.t-uppercase {
+	text-transform: uppercase;
+}
+
+/*==========================================================================
+  Misc & Adjust 
+ ========================================================================== */
+.row {
+	z-index: 9999;
+}
+
+.big {
+	font-size: 20pt;
+	font-weight: 300;
+}
+
+
+.blink:hover {
+	opacity: 0.9;
+}
+
+.half-offset {
+	margin-bottom: 75px !important;
+}
+
+.no-offset {
+	margin: 0 !important;
+	padding: 0;
+}
+
+.content,.container {
+	overflow: hidden;
+}
+
+.trans {
+	border: 0 !important;
+	background: 0 !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+.nobg {
+	background: 0;
+	border: 0;
+}
+
+.noborder {
+	border: 0 !important;
+}
+
+.color-white {
+	color: #fff;
+}
+
+.theme-bg {
+	background-color: #ff7701 !important;
+}
+
+.normalize-font-top {
+	padding-top: 25px;
+}
+
+
+
+/* --- float --- */
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+/* --- align --- */
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.align-center {
+	text-align: center;
+}
+
+/* ---- padding ---- */
+/* top */
+.pad-top0 {
+	padding-top: 0;
+}
+.pad-top5 {
+	padding-top: 5px;
+}
+
+.pad-top10 {
+	padding-top: 10px;
+}
+
+.pad-top15 {
+	padding-top: 15px;
+}
+.pad-top20 {
+	padding-top: 20px;
+}
+.pad-top25 {
+	padding-top: 25px;
+}
+.pad-top30 {
+	padding-top: 30px;
+}
+.pad-top35 {
+	padding-top: 35px;
+}
+.pad-top40 {
+	padding-top: 40px;
+}
+/* bottom */
+.pad-bot0 {
+	padding-bottom: 0;
+}
+.pad-bot5 {
+	padding-bottom: 5px;
+}
+
+.pad-bot10 {
+	padding-bottom: 10px;
+}
+
+.pad-bot15 {
+	padding-bottom: 15px;
+}
+.pad-bot20 {
+	padding-bottom: 20px;
+}
+.pad-bot25 {
+	padding-bottom: 25px;
+}
+.pad-bot30 {
+	padding-bottom: 30px;
+}
+.pad-bot35 {
+	padding-bottom: 35px;
+}
+.pad-bot40 {
+	padding-bottom: 40px;
+}
+
+
+/* ---- margin --- */
+.mar-left5 { margin-left: 5px; }
+.mar-left10 { margin-left: 10px; }
+.mar-left15 { margin-left: 15px; }
+.mar-left20 { margin-left: 20px; }
+.mar-left25 { margin-left: 25px; }
+.mar-left30 { margin-left: 30px; }
+
+.mar-right5 { margin-right: 5px; }
+.mar-right10 { margin-right: 10px; }
+.mar-right15 { margin-right: 15px; }
+.mar-right20 { margin-right: 20px; }
+.mar-right25 { margin-right: 25px; }
+.mar-right30 { margin-right: 30px; }
+
+/* top */
+.mar-top0 {
+	margin-top: 0;
+}
+.mar-top5 {
+	margin-top: 5px;
+}
+
+.mar-top10 {
+	margin-top: 10px;
+}
+
+.mar-top15 {
+	margin-top: 15px;
+}
+.mar-top20 {
+	margin-top: 20px;
+}
+.mar-top25 {
+	margin-top: 25px;
+}
+.mar-top30 {
+	margin-top: 30px;
+}
+.mar-top35 {
+	margin-top: 35px;
+}
+.mar-top40 {
+	margin-top: 40px;
+}
+
+
+/* bottom */
+.mar-bot0 {
+	margin-bottom: 0;
+}
+.mar-bot5 {
+	margin-bottom: 5px;
+}
+
+.mar-bot10 {
+	margin-bottom: 10px;
+}
+
+.mar-bot15 {
+	margin-bottom: 15px;
+}
+.mar-bot20 {
+	margin-bottom: 20px;
+}
+.mar-bot25 {
+	margin-bottom: 25px;
+}
+.mar-bot30 {
+	margin-bottom: 30px;
+}
+.mar-bot35 {
+	margin-bottom: 35px;
+}
+.mar-bot40 {
+	margin-bottom: 40px;
+}
+
+
+/*===========================
+  --- Sections ----
+=========================== */
+
+section.section {
+	margin:0;
+	padding: 30px 0 30px 0;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+/* --- section heading --- */
+.section-header {
+	text-align: center;
+}
+.section-header h2.section-heading {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+/*===========================
+  --- Header & menu ----
+=========================== */
+.navbar {
+	line-height: 100px;
+	height: 100px;
+	background-color: rgba(0,0,0,0.3);
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.navbar .navbar-collapse {
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.nav li {
+	height: 100%;
+	line-height: 100%;
+	margin-bottom: 0;
+	padding-bottom:0;
+}
+
+.nav>li>a {
+	display: table-cell;
+	height: 100%;
+	line-height: 100%;
+	vertical-align: middle;
+	color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.nav>li>a:hover {
+	color: #fff;
+	background: none;
+}
+
+.navbar-nav {
+	float: right;
+	margin-bottom: 0;
+	padding-bottom:0;	
+}
+
+.navbar .navbar-nav > .active > a {
+	color: #fff;
+}
+.navbar .navbar-nav > .active > a {
+	padding-bottom: 22px;
+}
+
+h1 a.navbar-brand {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 900;
+	text-shadow: none;
+}
+
+.navbar-brand {
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 90px;
+}
+
+.navbar-brand img {
+	vertical-align: middle;
+}
+
+.navbar-toggle {
+	padding: 0;
+	margin: 0;
+	width: 80px;
+}
+
+.navbar-collapse.in {
+	margin-top: -5px !important;
+}
+
+
+section.featured {
+	padding: 200px 0 60px;
+	background:  #70b9b0;
+	color: #ffffff;
+}
+
+section.featured h2.slogan {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 900;
+}
